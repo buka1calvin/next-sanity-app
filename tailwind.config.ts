@@ -9,10 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero:"url('/icons/Background.svg')",
+        service:"url('/images/background-2.jpeg')"
       },
+      colors:{
+        primary:{
+          1:"#fff",
+          2:"#0066A4"
+        }
+      },
+      screens:{
+        xs:{max:"450px"},
+        img:{max:"900px"}
+      }
     },
   },
   plugins: [],
